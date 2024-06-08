@@ -1,0 +1,36 @@
+/* .inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerContainer {
+  display: grid;
+}
+
+.timer {
+  margin-top: -43px;
+  margin-left: 33em;
+} */
+
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text content */
+}
+
+.inputBoxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width to allow proper centering */
+  height: 25vh; /* Half viewport height for better centering control */
+}
+
+.timer {
+  margin-top: 20px; /* Add some space between the InputBox and Timer */
+}
+
