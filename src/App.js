@@ -19,6 +19,7 @@ const App = () => {
           typingStarted={typingStarted}
           setTypingStarted={setTypingStarted}
         />
+        
       </div>
       <div className="timer">
         <Timer

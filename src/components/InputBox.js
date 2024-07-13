@@ -11,17 +11,19 @@ export default function InputBox(props) {
   };
 
   const countWords = (text) => {
-    return text.split(' ').filter(word => word.length > 0).length;
+    return text.split(/\s+/).filter(word => word.length > 0).length;
   };
 
   return (
-    <>
+    
+    <div className='wrap'>
       <textarea 
         value={inputText} 
         onChange={handleChange} 
-        className="inputText" 
+        className="inputText"
       />    
-    <p className='wordCount'>Word count: {countWords(inputText)}</p>
-    </>
+      <p className="wordCount" >Word count: {countWords(inputText)}</p>
+    </div>
+    
   );
 }

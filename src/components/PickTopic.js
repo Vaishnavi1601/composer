@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import Button from "@mui/material/Button";
+import '../styles/InputBox.css';
+
 export default function Picktopic(){
 
   const [randomTopic, setrandomTopic] = useState("");
@@ -42,8 +44,8 @@ export default function Picktopic(){
   }
   return(
     <>
-    <Button>{randomTopic}</Button>
-    <Button onClick={handleGenerateRandomTopic}> Click me to Get Topic !!!</Button>
+    <p className="time">{randomTopic}</p>
+    <Button className="customButton" onClick={handleGenerateRandomTopic}> Click me to Get Topic !!!</Button>
     </>
   )
 }
