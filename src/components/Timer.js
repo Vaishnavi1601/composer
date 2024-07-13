@@ -7,20 +7,20 @@ export default function Timer(props) {
   const { inputText, setInputText } = props;
   const { typingStarted, setTypingStarted } = props;
   const [time, setTime] = useState(0);
-
+  
   useEffect(() => {
-    // Only start the timer if inputText.length is greater than 0
-    if (inputText.length > 0) {
-      const interval = setInterval(() => {
+    let interval;
+    if (typingStarted) {
+      interval = setInterval(() => {
         setTime((ss) => ss + 1);
       }, 1000);
-
-      // Clear the interval when the component unmounts or when inputText length becomes 0
-      return () => clearInterval(interval);
-    } else {
-      // Clear the interval if inputText.length becomes 0
-      return () => clearInterval();
     }
+
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
   }, [typingStarted]);
 
   const formatTime = (time) => {
