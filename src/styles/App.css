@@ -1,5 +1,6 @@
  body{
-  background: #FFFAE6;
+  background: #00858b1a;
+  font-family: sans-serif;
 } 
 
 .centerContainer {
@@ -16,7 +17,6 @@
   justify-content: center;
   padding-top: 20px;
   width: 100%; /* Full width to allow proper centering */
-  /* height: 25vh; Half viewport height for better centering control */
 }
 
 .timer {

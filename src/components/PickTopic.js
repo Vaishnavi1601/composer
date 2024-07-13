@@ -44,6 +44,7 @@ export default function Picktopic(){
   }
   return(
     <>
+      <h1>Text Counter</h1>
     <p className="time">{randomTopic}</p>
     <Button className="customButton" onClick={handleGenerateRandomTopic}> Click me to Get Topic !!!</Button>
     </>

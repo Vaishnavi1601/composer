@@ -3,9 +3,7 @@
   width: 100%;
   outline: none;
   border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #fffae6;
+  background-color: #fff;
   outline-offset: 3px;
   transition: 0.25s;
   resize: none;
@@ -23,8 +21,7 @@
 }
 
 .wordCount {
-  color: #ff5f00;
-  font-family: math;
+  color: blue;
   display: flex;
   justify-content: end;
   align-items: flex-end;
@@ -36,18 +33,19 @@
   height: 100%;
   width: 50%;
   border-radius: 10px;
-  background-color: #fffae6;
+  background-color: #fff;
   flex-direction: column;
   border: 2px solid #002379;
   overflow: hidden;
 }
 .time {
   color: #ff5f00;
-  font-family: math;
+  margin-top: -9px;
 }
 
 .customButton {
-  color: #002379;
+  color: yellow;
+  background-color: black;
 }
 
 @media (max-width: 600px) {
